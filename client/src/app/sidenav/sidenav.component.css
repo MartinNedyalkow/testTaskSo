@@ -1,0 +1,15 @@
+
+  ::ng-deep aside {
+    background-color: #fff;
+    padding: 2em 1em;
+  }
+  .header {
+    align-items: center;
+    background: #0273d4;
+    color: #fff;
+    display: flex;
+    padding: 2px;
+  }
+  
+  
+  

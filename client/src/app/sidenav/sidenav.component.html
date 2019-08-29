@@ -1,0 +1,16 @@
+<ng-sidebar-container style="height: 100vh">
+    <ng-sidebar [(opened)]="_opened" [mode]="'slide'">
+      <p>Search a book</p>
+      <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search"/>
+      <select   class="form-control" (change)="selectedGenre($event.target.value)">
+          <option *ngFor="let genre of allGenres" value="{{genre}}">{{genre}}</option>
+        </select>
+    </ng-sidebar>
+    <div ng-sidebar-content>
+
+        <header class="header">
+            <i class="fa fa-bars fa-2x" aria-hidden="true" (click)="_toggleSidebar()"  ></i>
+          </header>
+          <app-book-list [genre]='genre'></app-book-list>
+    </div>
+  </ng-sidebar-container>

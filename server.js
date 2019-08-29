@@ -3,8 +3,11 @@ const Mongoose = require("mongoose");
 const app = express();
 const port = process.env.PORT || 5000;
 const BodyParser = require('body-parser')
+const cors = require('cors')
+app.use(cors())
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: true }));
+
 Mongoose.connect("mongodb+srv://MNED:MNED@testtaskso-pt65n.azure.mongodb.net/test?retryWrites=true&w=majority",{ useNewUrlParser: true })
 
 const db = Mongoose.connection;
