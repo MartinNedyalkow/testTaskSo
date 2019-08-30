@@ -9,6 +9,8 @@ import { GenreService } from '../core/services/genre.service';
 export class BookListComponent implements OnInit,OnChanges {
   @Input()
 public genre:any
+ @Input()
+ public bookFilter:any
 public books = []
   
 
@@ -22,8 +24,20 @@ public books = []
     this.showBooks()
   }
   ngOnChanges(): void {
+    this.filterGenres(this.genre)
+  }
+
+  public showBooks(){
+    this.bookService.getAllBooks().subscribe(data=>{
+      this.books=data
+    })
+  }
+
+  
+ public filterGenres(input){
+   if(input===undefined){return}
     const genre={
-      search:this.genre
+      search:input
     }
     if(this.genre==="All"){
       this.showBooks()
@@ -33,14 +47,9 @@ public books = []
       this.genreService.getBooksByGenreId(data[0]._id).subscribe(data=>{
         this.books=data
       })
-    })
-  }
-  public showBooks(){
-    this.bookService.getAllBooks().subscribe(data=>{
-      this.books=data
-    })
-  }
 
+    })
+ }
 
 
 }

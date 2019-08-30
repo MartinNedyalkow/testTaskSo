@@ -19,10 +19,13 @@
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
+    "@auth0/angular-jwt": "^3.0.0",
     "@ng-bootstrap/ng-bootstrap": "^5.1.0",
     "font-awesome": "^4.7.0",
+    "jwt-decode": "^2.2.0",
     "ng-sidebar": "^9.1.1",
     "rxjs": "~6.4.0",
+    "sweetalert2": "^8.16.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },

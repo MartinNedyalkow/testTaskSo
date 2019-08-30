@@ -17,7 +17,7 @@ export class BookService {
     return this.http.get(`http://localhost:5000/api/book/${id}`)
   }
 
-  public searchBook(title:string):Observable<any>{
+  public searchBook(title:any):Observable<any>{
     return this.http.post(`http://localhost:5000/api/books/search`,title)
   }
 

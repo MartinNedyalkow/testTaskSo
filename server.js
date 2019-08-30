@@ -16,11 +16,23 @@ db.once('open', function() {
   console.log("connected");
   
 });
+const userSchema = new Mongoose.Schema({
+  userName:String,
+  email:String,
+  password:String,
+  favoriteBooks:Array,
+  dateOfRegister: Date
+})
+
+const user = Mongoose.model('User', userSchema);
 
 const bookSchema = new Mongoose.Schema({
   name: String,
   author: String,
   genre:String,
+  summery:String,
+  img:String,
+  isBookmarked:Boolean,
   dateOfCreation:Date,
   dateOfLastUpdate:Date 
 });
@@ -73,6 +85,21 @@ app.post("/api/books/search", async (request, response) => {
 app.post("/api/genres/search", async (request, response) => {
   const result = await genre.find({name:{ '$regex' : request.body.search, '$options' : 'i' }});
   response.send(result);
+  }
+);
+
+app.post("/newuser", async (request, response) => {
+  const newUser = new user(request.body);
+  const result = await newUser.save();
+  response.send(result);
 });
+
+app.post("/user", async (request, response) => {
+  const userToreturn=request.body.username
+  const result = await user.findOne({userName:userToreturn})
+  response.send(result);
+  }
+);
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
  
