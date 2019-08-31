@@ -1,24 +1,41 @@
 <ng-sidebar-container style="height: 100vh">
     <ng-sidebar [(opened)]="_opened" [mode]="'slide'">
-      <img src="../../assets/user-placeholder.png" alt="">
+      <img src="../../assets/masan.png" alt="">
+      <p>Wellcome, {{user}}</p>
       <p>Search By Title</p>
       <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" (selectItem)="selectItem($event)" placeholder="Search"/><br>
       <p>Search By Genre</p>
-      <select   class="form-control" (change)="selectedGenre($event.target.value)">
-          <option *ngFor="let genre of allGenres" value="{{genre}}">{{genre}}</option>
+      <select  id="genre" class="form-control" (change)="selectedGenre($event.target.value)">
+          <option *ngFor="let genre of allGenres " value="{{genre}}">{{genre}}</option>
         </select>
-        <p>My Bookmarks</p>
+        <p>My Bookmarks:</p>
+        <div *ngFor="let book of favoriteBooks" class="myBookmarks">
+          <div class="bookmarkedBook">
+              <i class="fa fa-book" aria-hidden="true"></i><span><p>{{book.name}}</p></span><i class="fa fa-times" aria-hidden="true" (click)="removeFromBookmarks(book.name)"></i>
+          </div>
+          
+        </div>
     </ng-sidebar>
     <div ng-sidebar-content>
-
+      <div>
+        
+        <div class="login" *ngIf="!loggedIn">
+          <p (click)="login()">Login</p><p (click)="register()">Register</p>
+          </div>
+          <div class="login" *ngIf="loggedIn">
+              <p (click)="logout()">Logout</p>
+          </div>
+        </div>
+        <div class="header">
+            <i class="fa fa-book fa-2x" aria-hidden="true"></i><span><div class="library"><p>My Personal Library</p></div></span>
+        </div>
         <header class="header">
-          <div style="text-align: center;"><button>Login</button></div>
           <div *ngIf="!_opened">
             <i class="fa fa-arrow-circle-right fa-2x" aria-hidden="true" (click)="_toggleSidebar()"  ></i>
           </div>
           <div *ngIf="_opened">
               <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true" (click)="_toggleSidebar()"  ></i>
-            </div>
+            </div><span><input id="typeahead2" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" (selectItem)="selectItem($event)" placeholder="Search"/></span>
           </header>
           <app-book-list [genre]='genre'></app-book-list>
     </div>

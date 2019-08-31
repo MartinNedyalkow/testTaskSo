@@ -1,6 +1,10 @@
 <div class="cardList">
-        <ng-container *ngFor="let book of books">
+        <ng-container *ngFor="let book of books | paginate: { itemsPerPage: 10, currentPage: p }">
             <app-singlebook class="cardListItem" [book]='book'></app-singlebook>
             
         </ng-container>
+        
     </div>
+    <div *ngIf="books.length > 10">
+    <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls>
+</div>

@@ -9,8 +9,8 @@ import { BookListComponent } from './book-list/book-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SinglebookComponent } from './singlebook/singlebook.component'; 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { LoginComponent } from './login/login.component';
 import { JwtHelperService, JwtModule } from '@auth0/angular-jwt';
+import {NgxPaginationModule} from 'ngx-pagination';
 export function tokenGetter() {
   return localStorage.getItem('access_token');
 }
@@ -20,7 +20,6 @@ export function tokenGetter() {
     SidenavComponent,
     BookListComponent,
     SinglebookComponent,
-    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -29,11 +28,10 @@ export function tokenGetter() {
     FormsModule,
     HttpClientModule,
     NgbModule,
+    NgxPaginationModule,
     JwtModule.forRoot({
       config: {
-        tokenGetter,
-        whitelistedDomains: ['example.com'],
-        blacklistedRoutes: ['/posts']
+        tokenGetter
       }
     })
   ],

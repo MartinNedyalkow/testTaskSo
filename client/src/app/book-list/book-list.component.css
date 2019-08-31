@@ -1,4 +1,5 @@
 .cardList {
+  margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,4 +15,7 @@
   /* Item sizing */
   .cardListItem {
     flex: 0 1 calc(20% - 32px);
+  }
+  .my-pagination /deep/ .ngx-pagination .current {
+    background: #4C394E;
   }

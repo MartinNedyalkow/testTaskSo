@@ -13,6 +13,7 @@ public genre:any
  public bookFilter:any
 public books = []
   
+p: number = 1;
 
   
   constructor(

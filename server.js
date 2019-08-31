@@ -16,6 +16,7 @@ db.once('open', function() {
   console.log("connected");
   
 });
+Mongoose.set('useFindAndModify', false);
 const userSchema = new Mongoose.Schema({
   userName:String,
   email:String,
@@ -89,6 +90,7 @@ app.post("/api/genres/search", async (request, response) => {
 );
 
 app.post("/newuser", async (request, response) => {
+  console.log(request.body);
   const newUser = new user(request.body);
   const result = await newUser.save();
   response.send(result);
@@ -97,6 +99,15 @@ app.post("/newuser", async (request, response) => {
 app.post("/user", async (request, response) => {
   const userToreturn=request.body.username
   const result = await user.findOne({userName:userToreturn})
+  response.send(result);
+  }
+);
+ 
+app.put("/user", async (request, response) => {
+  const userToreturn=request.body.username
+  const oldUser = await user.findOne({userName:userToreturn})
+  oldUser.favoriteBooks=request.body.favoriteBooks
+  const result = await user.findByIdAndUpdate(request.body._id,oldUser,{new: true})
   response.send(result);
   }
 );
