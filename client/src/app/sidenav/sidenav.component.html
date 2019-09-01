@@ -23,19 +23,16 @@
           <p (click)="login()">Login</p><p (click)="register()">Register</p>
           </div>
           <div class="login" *ngIf="loggedIn">
-              <p (click)="logout()">Logout</p>
+              <p (click)="logout()">Log Out</p>
           </div>
         </div>
         <div class="header">
             <i class="fa fa-book fa-2x" aria-hidden="true"></i><span><div class="library"><p>My Personal Library</p></div></span>
         </div>
         <header class="header">
-          <div *ngIf="!_opened">
-            <i class="fa fa-arrow-circle-right fa-2x" aria-hidden="true" (click)="_toggleSidebar()"  ></i>
-          </div>
-          <div *ngIf="_opened">
-              <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true" (click)="_toggleSidebar()"  ></i>
-            </div><span><input id="typeahead2" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" (selectItem)="selectItem($event)" placeholder="Search"/></span>
+          <div>
+            <i class="fa fa-exchange fa-2x" aria-hidden="true" (click)="_toggleSidebar()"  ></i>
+          </div><span><input id="typeahead2" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" (selectItem)="selectItem($event)" placeholder="Search"/></span>
           </header>
           <app-book-list [genre]='genre'></app-book-list>
     </div>

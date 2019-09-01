@@ -203,10 +203,15 @@ export class SidenavComponent implements OnInit {
         {
           title: 'Enter Password',
           input: 'password',
-          inputValidator: (value) => {
-            return !value && 'You need to write something!'
-          }
-        }
+          inputValidator: (value) => {return new Promise((resolve) => {
+            const passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+            if (value.match(passw)) {
+              resolve()
+            } else {
+              resolve('6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter')
+            }
+          })
+        }}
       ]).then((result) => {
         if (result.value) {
           const newUser={
@@ -217,7 +222,7 @@ export class SidenavComponent implements OnInit {
             dateOfRegister: new Date()
           }
           this.userService.registerUser(newUser).subscribe()
-          return
+          
         }
         this.login()
       })

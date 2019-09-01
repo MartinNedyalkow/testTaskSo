@@ -1,0 +1,819 @@
+{
+	"info": {
+		"_postman_id": "79cfd83b-797b-4a99-8741-65ed209a4c5b",
+		"name": "TestTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Milk and Honey\",\r\n  \"author\": \"Rupi Kaur\",\r\n  \"genre\":\"Poetry\",\r\n  \"summery\":\"#1 New York Times bestseller Milk and Honey is a collection of poetry and prose about survival. About the experience of violence, abuse, love, loss, and femininity.The book is divided into four chapters, and each chapter serves a different purpose. Deals with a different pain. Heals a different heartache. Milk and Honey takes readers through a journey of the most bitter moments in life and finds sweetness in them because there is sweetness everywhere if you are just willing to look.\",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4494/9781449474256.jpg\",\r\n  \"isBookmarked\":\"false\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"The Man Who Mistook His Wife for a Hat\",\r\n  \"author\": \"Oliver Sacks\",\r\n  \"genre\":\"Psychology\",\r\n  \"summery\":\"Oliver Sacks has become the world's best-known neurologist. His case studies of broken minds offer brilliant insight into the mysteries of consciousness' Guardian In his most extraordinary book, The Man Who Mistook His Wife for a Hat, Oliver Sacks recounts the stories of patients lost in the bizarre, apparently inescapable world of neurological disorders. These are case studies of people who have lost their memories and with them the greater part of their pasts; who are no longer able to recognize people or common objects; whose limbs have become alien; who are afflicted and yet are gifted with uncanny artistic or mathematical talents. In Dr Sacks's splendid and sympathetic telling, each tale is a unique and deeply human study of life struggling against incredible adversity\",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/3305/9780330523622.jpg\",\r\n  \"isBookmarked\":\"false\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Love & Misadventure\",\r\n  \"author\": \"Lang Leav\",\r\n  \"genre\":\"Romance\",\r\n  \"summery\":\"Beautifully illustrated and thoughtfully conceived, Love and Misadventure will take you on a rollercoaster ride through an ill-fated love affair-from the initial butterflies through the soaring heights to the devastating plunge. And, in the end, the message is one of hope.The journey from love to heartbreak to finding love again is personal yet universal. Lang Leav's evocative love poetry speaks to the soul of anyone who is on this journey. Leav has an unnerving ability to see inside the hearts and minds of her readers. Her talent for translating complex emotions with astonishing simplicity has won her a cult following of devoted modern poetry fans from all over the world. Forget the dainty, delicate love poems of yore; these little poems pack a mighty punch.\",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4494/9781449456146.jpg\",\r\n  \"isBookmarked\":\"false\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"If On A Winter's Night A Traveller\",\r\n  \"author\": \"Italo Calvino\",\r\n  \"genre\":\"Fiction\",\r\n  \"summery\":\"You go into a bookshop and buy If on a Winter's Night a Traveller by Italo Calvino. You like it. But alas there is a printer's error in your copy. You take it back to the shop and get a replacement. But the replacement seems to be a totally different story. You try to track down the original book you were reading but end up with a different narrative again. This remarkable novel leads you through many different books including a detective adventure, a romance, a satire, an erotic story, a diary and a quest. But the real hero is you, the reader.\",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0994/9780099430896.jpg\",\r\n  \"isBookmarked\":\"false\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"The Definitive Book of Body Language\",\r\n  \"author\": \"Barbara Pease\",\r\n  \"genre\":\"Mind, Body & Spirit\",\r\n  \"summery\":\"This international bestseller explains everything you need to know about body language, how to read it, and how to put your best self forwards.What people say is often very different to what they think or feel.Now, with THE DEFINITIVE BOOK OF BODY LANGUAGE, you can learn to read others people's thoughts by their gestures. It sounds implausible, but body language is easy to pick up and fun to use\",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4091/9781409168508.jpg\",\r\n  \"isBookmarked\":\"false\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"The Five People You Meet In Heaven\",\r\n  \"author\": \"Mitch Albom\",\r\n  \"genre\":\"Fiction\",\r\n  \"summery\":\"The first novel in the Heaven series from the internationally bestselling author, Mitch Albom.THE FIVE PEOPLE YOU MEET IN HEAVEN is a wonderfully moving fable that addresses the meaning of life, and life after death, in the poignant way that made TUESDAYS WITH MORRIE such an astonishing book. The novel's protagonist is an elderly amusement park maintenance worker named Eddie who, while operating a ride called the 'Free Fall', dies while trying to save a young girl who gets in the way of a falling cart that hurtles to earth. Eddie goes to heaven, where he meets five people who were unexpectedly instrumental in some way in his life. While each guide takes him through heaven, Eddie learns a little bit more about what his time on earth meant, what he was supposed to have learned, and what his true purpose on earth was. \",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/7515/9780751536829.jpg\",\r\n  \"isBookmarked\":\"false\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Goddess Power Oracle\",\r\n  \"author\": \"Colette Baron-Reid\",\r\n  \"genre\":\"Mind, Body & Spirit\",\r\n  \"summery\":\"We are at an unprecedented time in modern history in which the 'goddess energy' in every woman is waking up and stirring as women collectively choose to reclaim their power from the structures of authority that have ruled for so long. We all feel it welling up, asking for a new way of being in the world.From beloved oracle expert and internationally acclaimed spiritual teacher Colette Baron-Reid, Goddess Power is a unique oracle deck that allows ancient goddesses to revisit us here in modern times, to share their experience, strength, wisdom and truth with the modern spiritual seeker looking for empowerment and guidance.\",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4019/9781401956448.jpg\",\r\n  \"isBookmarked\":\"false\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"The Lathe Of Heaven\",\r\n  \"author\": \"Ursula K. Le Guin\",\r\n  \"genre\":\"Fiction\",\r\n  \"summery\":\"George Orr is a mild and unremarkable man who finds the world a less than pleasant place to live: seven billion people jostle for living space and food. But George dreams dreams which do in fact change reality - and he has no means of controlling this extraordinary power.Psychiatrist Dr William Haber offers to help. At first sceptical of George's powers, he comes to astonished belief. When he allows ambition to get the better of ethics, George finds himself caught up in a situation of alarming peril. \",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/8579/9781857989519.jpg\",\r\n  \"isBookmarked\":false,\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"The Time Keeper\",\r\n  \"author\": \"Mitch Albom\",\r\n  \"genre\":\"Fiction\",\r\n  \"summery\":\"Banished for centuries, as punishment for trying to measure time, the inventor of the world's first clock is finally granted his freedom, along with a mission: a chance to redeem himself by teaching two people the true meaning of time.He returns to our world and embarks on a journey with two unlikely partners: a teenage girl who is about to give up on life and a wealthy, ageing businessman who wants to live for ever. To save himself, he must save them both. \",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/7515/9780751541175.jpg\",\r\n  \"isBookmarked\":false,\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"The Penultimate Truth\",\r\n  \"author\": \"Philip K. Dick\",\r\n  \"genre\":\"Fiction\",\r\n  \"summery\":\"A masterly tale of political deception from the most significant writer of SF in the 20th century World War III is raging - or so the millions of people crammed in their underground tanks believe. For fiteen years, subterranean humanity has been fed on daily broadcasts of a never-ending nuclear destruction, sustained by a belief in the all powerful Protector.Now someone has gone to the surface and found no destruction, no war. The authorities have been telling a massive lie. Now the search begins to find out why.\",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/5750/9780575074811.jpg\",\r\n  \"isBookmarked\":false,\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ape and Essence\",\r\n  \"author\": \"Aldous Huxley\",\r\n  \"genre\":\"Fiction\",\r\n  \"summery\":\"In February 2108, the New Zealand Rediscovery Expedition reaches California at last. It is over a century since the world was devastated by nuclear war, but the blight of radioactivity and disease still gnaws away at the survivors. The expedition expects to find physical destruction but they are quite unprepared for the moral degradation they meet. Ape and Essence is Huxley's vision of the ruin of humanity, told with all his knowledge and imaginative genius.\",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0994/9780099477785.jpg\",\r\n  \"isBookmarked\":false,\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"The Eyes of the Skin : Architecture and the Senses\",\r\n  \"author\": \"Juhani Pallasmaa\",\r\n  \"genre\":\"Architecture\",\r\n  \"summery\":\"First published in 1996, The Eyes of the Skin has become a classic of architectural theory. For every new intake of students studying Pallasmaa s classic text, The Eyes of the Skin provides a totally fresh understanding of architecture and a new set of insights. This third edition is intended to meet students desire for a further understanding of the context of Pallasmaa s thinking by providing a new essay by architectural author and educator Peter MacKeith. This text combines both a biographical portrait of Pallasmaa and an outline of his architectural thinking. The new edition will includes a new preface by the internationally renowned architect Steven Holl and a revised introduction by Pallasmaa himself. \",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/1199/9781119941286.jpg\",\r\n  \"isBookmarked\":false,\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Stonemouth\",\r\n  \"author\": \"Iain Banks\",\r\n  \"genre\":\"Fiction\",\r\n  \"summery\":\"Stewart Gilmour is back in Stonemouth. After five years in exile his presence is required at the funeral of patriarch Joe Murston, and even though the last time Stu saw the Murstons he was running for his life, staying away might be even more dangerous than turning up.An estuary town north of Aberdeen, Stonemouth, with it's five mile beach, can be beautiful on a sunny day. On a bleak one it can seem to offer little more than seafog, gangsters, cheap drugs and a suspension bridge irresistible to suicides. And although there's supposed to be a temporary truce between Stewart and the town's biggest crime family, it's soon clear that only Stewart is taking this promise of peace seriously. Before long Stu steps back into the minefield of his past to confront his guilt and all that it has lost him, uncovering ever darker stories. \",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/3490/9780349000206.jpg\",\r\n  \"isBookmarked\":false,\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"The End of History and the Last Man\",\r\n  \"author\": \"Francis Fukuyama\",\r\n  \"genre\":\"Philosophy\",\r\n  \"summery\":\"THE GLOBAL BESTSELLER. STILL AS RELEVANT TODAY. 20th anniversary edition of The End of History and the Last Man, a landmark of political philosophy by Francis Fukuyama, author of The Origins of Political Order.With the fall of Berlin Wall in 1989 the threat of the Cold War which had dominated the second half of the twentieth century vanished. \",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/2419/9780241960240.jpg\",\r\n  \"isBookmarked\":false,\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Fool Moon : The Dresden Files, Book Two\",\r\n  \"author\": \"Jim Butcher\",\r\n  \"genre\":\"Philosophy\",\r\n  \"summery\":\"Meet Harry Dresden, Chicago's first (and only) Wizard P.I. Turns out the 'everyday' world is full of strange and magical things - and most of them don't play well with humans. That's where Harry comes in.Business has been slow lately for Harry Dresden. Okay, business has been dead. Not undead - just dead. You would think Chicago would have a little more action for the only professional wizard in the phone book. But lately, Harry hasn't been able to dredge up any kind of work - magical or mundane. But just when it looks like he can't afford his next meal, a murder comes along that requires his particular brand of supernatural expertise. A brutally mutilated corpse. Strange-looking paw prints. A full moon. Take three guesses. And the first two don't count . . . Magic - it can get a guy killed.\",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/3565/9780356500287.jpg\",\r\n  \"isBookmarked\":false,\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"The Myth of Sisyphus\",\r\n  \"author\": \"James Wood\",\r\n  \"genre\":\"Existentialism\",\r\n  \"summery\":\"The summation of the existentialist philosophy threaded throughout all his writing, Albert Camus' The Myth of Sisyphus is translated by Justin O'Brien with an introduction by James Wood in Penguin Classics.In this profound and moving philosophical statement, Camus poses the fundamental question: is life worth living? If human existence holds no significance, what can keep us from suicide? As Camus argues, if there is no God to give meaning to our lives, humans must take on that purpose themselves. This is our 'absurd' task, like Sisyphus forever rolling his rock up a hill, as the inevitability of death constantly overshadows us. Written during the bleakest days of the Second World War, The Myth of Sisyphus (Le Mythe de Sisyphe) argues for an acceptance of reality that encompasses revolt, passion and, above all, liberty. \",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/1411/9780141182001.jpg\",\r\n  \"isBookmarked\":false,\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newbook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Across the River and into the Trees\",\r\n  \"author\": \"Ernest Hemingway\",\r\n  \"genre\":\"Fiction\",\r\n  \"summery\":\"The War is just over. In Venice, a city elaborately and affectionately described, the American Colonel, Richard Cantrell, falls passionately in love with Renata, a young Italian countess who has 'a profile that could break your or anyone else's heart'. Cantrell is embittered, war-scarred and old enough to be Renata's father, but he is overwhelmed by the selflessness and freshness of the love she is offering.\",\r\n  \"img\":\"https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0999/9780099909606.jpg\",\r\n  \"isBookmarked\":false,\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newbook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newbook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newgenre",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Art\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newgenre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newgenre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newgenre",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Poetry\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newgenre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newgenre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newgenre",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Psychology\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newgenre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newgenre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newgenre",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Romance\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newgenre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newgenre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newgenre",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Fiction\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newgenre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newgenre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newgenre",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Mind, Body & Spirit\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newgenre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newgenre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newgenre",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Architecture\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newgenre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newgenre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newgenre",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Philosophy\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newgenre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newgenre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newgenre",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Existentialism\",\r\n  \"dateOfCreation\":\"2017-08-01\",\r\n  \"dateOfLastUpdate\":\"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newgenre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newgenre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/newuser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\":\"MNED\",\r\n  \"email\":\"MNED@bv.bg\",\r\n  \"password\":\"Aaaa1!\",\r\n  \"favoriteBooks\":[],\r\n  \"dateOfRegister\": \"2017-08-01\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/newuser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"newuser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -48,10 +48,6 @@ const genreSchema = new Mongoose.Schema({
 
 const genre = Mongoose.model('Genre', genreSchema);
 
-app.get('/api/hello', (req, res) => {
-  res.send(
-    { express: 'Hello From Express'});
-});
 app.post("/newbook", async (request, response) => {
       const newBook = new book(request.body);
       const result = await newBook.save();
@@ -90,7 +86,6 @@ app.post("/api/genres/search", async (request, response) => {
 );
 
 app.post("/newuser", async (request, response) => {
-  console.log(request.body);
   const newUser = new user(request.body);
   const result = await newUser.save();
   response.send(result);
