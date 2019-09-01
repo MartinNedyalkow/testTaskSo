@@ -1,14 +1,14 @@
 <ng-sidebar-container style="height: 100vh">
     <ng-sidebar [(opened)]="_opened" [mode]="'slide'">
-      <img src="../../assets/masan.png" alt="">
+      <img src="../../assets/man (1).png" alt="">
       <p>Wellcome, {{user}}</p>
-      <p>Search By Title</p>
+      <p class="searchF">Search By Title</p>
       <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" (selectItem)="selectItem($event)" placeholder="Search"/><br>
-      <p>Search By Genre</p>
+      <p class="searchF">Search By Genre</p>
       <select  id="genre" class="form-control" (change)="selectedGenre($event.target.value)">
           <option *ngFor="let genre of allGenres " value="{{genre}}">{{genre}}</option>
         </select>
-        <p>My Bookmarks:</p>
+        <p class="searchF">My Bookmarks:</p>
         <div *ngFor="let book of favoriteBooks" class="myBookmarks">
           <div class="bookmarkedBook">
               <i class="fa fa-book" aria-hidden="true"></i><span><p>{{book.name}}</p></span><i class="fa fa-times" aria-hidden="true" (click)="removeFromBookmarks(book.name)"></i>
@@ -20,7 +20,7 @@
       <div>
         
         <div class="login" *ngIf="!loggedIn">
-          <p (click)="login()">Login</p><p (click)="register()">Register</p>
+          <p (click)="login()">Log In</p><p (click)="register()">Register</p>
           </div>
           <div class="login" *ngIf="loggedIn">
               <p (click)="logout()">Log Out</p>

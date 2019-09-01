@@ -31,10 +31,10 @@ export class SinglebookComponent implements OnInit {
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText:
-          '<i class="fa fa-thumbs-up"></i> Bookmark!',
+          'Bookmark!',
         confirmButtonAriaLabel: 'Thumbs up, great!',
         cancelButtonText:
-          '<i class="fa fa-thumbs-down"></i>',
+          'Close',
         cancelButtonAriaLabel: 'Thumbs down'
       }).then((result) => {
         if (result.value) {

@@ -22,7 +22,10 @@
   height: auto;
   transform: scale(1);
 }
+.bookWraper  {
+  transition: all 0.3s;
+}
 
-.bookWraper:hover img {
+.bookWraper:hover {
   transform: scale(1.1);
 }

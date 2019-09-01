@@ -190,14 +190,26 @@ export class SidenavComponent implements OnInit {
       }).queue([
         {
           title: 'Enter Username',
-          inputValidator: (value) => {
-            return !value && 'You need to write something!'
-          }
+          inputValidator: (value) => {return new Promise((resolve) => {
+            if(!value){resolve("You must enter a username")}
+            this.userService.checkUser({username:value}).subscribe(data=>{
+              if(data){
+                resolve('This user already exists')
+              }else{resolve()}
+            })
+          })
+        }
         },{
           title: 'Enter Email',
-          inputValidator: (value) => {
-            return !value && 'You need to write something!'
-          }
+          inputValidator: (value) => {return new Promise((resolve) => {
+            const match = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (value.match(match)) {
+              resolve()
+            } else {
+              resolve('Not a valid email')
+            }
+          })
+        }
         }
         ,
         {
